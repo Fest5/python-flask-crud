@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="col-md-4 offset-md-4">
+    <div class="card card-body">
+        <form action="/updateProd/{{producto.0}}" method="POST">
+            <div class="form-group">
+                <input type="text" name="nombre" placeholder="Nombre" value="{{ producto.1 }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="descripcion" placeholder="Descripcion" value="{{ producto.2 }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="stock" placeholder="Stock" value="{{ producto.3 }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="precio" placeholder="Precio" value="{{ producto.4 }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">
+                    Save
+                </button>
+            </div>
+            
+            
+        
+        </form>
+    </div>
+</div>
+
+{% endblock %}

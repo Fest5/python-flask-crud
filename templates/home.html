@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<img src="../static/banner.jpg" class="banner" alt="banner">
+<main class="principal container mt-3 pt-1">
+    
+    
+    <div class="home">
+        <h1 class="titulo">Hola! Bienvenido a la plataforma de gestion de productos y clientes.</h1>
+        <div class="card mt-2">
+            <h3 class="card-header sub-titulo">En esta plataforma usted podra realizar cambios al registro de productos y clientes!</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">- Agregar</li>
+                <li class="list-group-item">- Eliminar</li>
+                <li class="list-group-item">- Editar</li>
+            </ul>
+            <div class="card-footer">
+                <h4>Presione alguno de los botones debajo para comenzar</h4>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="botones">
+        <a href="/verProducto" class="btn btn-success btn-block">
+            PRODUCTOS
+        </a>
+        <a href="/verClient" class="btn btn-danger btn-block">
+            CLIENTES
+        </a>
+    </div>
+   
+</main>
+{% endblock %}
+
